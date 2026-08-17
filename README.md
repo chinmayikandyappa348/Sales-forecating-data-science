@@ -1,67 +1,126 @@
-# Sales Forecasting Using Machine Learning and Power BI
+📊 Sales Forecasting Using Data Science & Flask
 
-## Project Description
-This project predicts sales using machine learning and visualises sales data using Power BI.
+📌 Project Overview
 
-## Technologies Used
+This project is a Sales Forecasting web application developed using Data Science, Machine Learning, Python, and Flask.
+
+The application analyzes historical sales data and provides sales forecasting through a simple web interface.
+
+🎯 Objectives
+
+- Analyze historical sales data
+- Clean and preprocess the data
+- Perform Exploratory Data Analysis (EDA)
+- Build a Machine Learning model
+- Forecast future sales
+- Develop a user-friendly web application using Flask
+- Display prediction results through a web interface
+
+🛠️ Technologies Used
+
 - Python
 - Pandas
+- NumPy
 - Scikit-learn
-- Joblib
+- Matplotlib
 - Flask
+- HTML
+- CSS
 - Power BI
 
-## Project Structure
+🔄 Project Workflow
 
-Sales_Forecasting/
-│
-├── dataset/
-│   └── sales.csv
-├── model/
-│   └── sales_model.pkl
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-├── screenshots/
-├── train_model.py
-├── predict.py
-├── main.py
-├── eda.py
-├── forecast_result.csv
-├── sales_forecasting_dashboard.pbix
-└── README.md
+Historical Sales Data
+        ↓
+Data Cleaning
+        ↓
+Exploratory Data Analysis
+        ↓
+Feature Engineering
+        ↓
+Machine Learning Model
+        ↓
+Sales Forecasting
+        ↓
+Flask Web Application
+        ↓
+Prediction Result
 
-## How to Run the Project
+📂 Project Files
 
-1. Install the required Python packages:
+File| Description
+"main.py"| Flask application
+"eda.py"| Exploratory Data Analysis
+"predict.py"| Generates sales predictions
+"forecast_result.csv"| Forecasting results
+"sales.csv"| Sales dataset
+"requirements.txt"| Required Python libraries
+"Sales_Forecasting_Final_Report.pdf"| Project report
 
-pip install pandas scikit-learn joblib flask
+🚀 How to Run the Project
 
-2. Train the model:
+1. Clone the repository
 
-python train_model.py
+git clone YOUR_GITHUB_REPOSITORY_LINK
 
-3. Test the prediction:
+2. Open the project folder
 
-python predict.py
+cd sales-forecasting-data-science
 
-4. Run the web application:
+3. Install the required libraries
+
+pip install -r requirements.txt
+
+4. Run the Flask application
 
 python main.py
 
-5. Open the local URL shown in the terminal.
+5. Open the application
 
-## Power BI Dashboard
+After starting Flask, you will see a local address in the terminal, such as:
 
-Open the file:
+http://127.0.0.1:5000/
 
-sales_forecasting_dashboard.pbix
+Open that address in your web browser.
 
-## Project Developed By
+📊 Key Features
+
+- Sales data analysis
+- Data preprocessing
+- Exploratory Data Analysis
+- Machine Learning-based forecasting
+- Flask-based web interface
+- Prediction results
+- Sales visualization
+
+🎓 Learning Outcomes
+
+This project helped me gain practical experience in:
+
+- Python programming
+- Data preprocessing
+- Exploratory Data Analysis
+- Machine Learning
+- Sales forecasting
+- Flask web development
+- Data visualization
+- Building an end-to-end Data Science project
+
+🚀 Future Improvements
+
+- Improve forecasting accuracy
+- Add interactive visualizations
+- Add more Machine Learning algorithms
+- Deploy the Flask application online
+- Add real-time sales forecasting
+- Develop a more interactive dashboard
+
+👩‍💻 Author
 
 Chinmayi K
 
-## Organization
+BCA Student | Data Science Learner
 
-Jyesta Corporate Entity
+---
+
+⭐ Thank you for visiting this project!
