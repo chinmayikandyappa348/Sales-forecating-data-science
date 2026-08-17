@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sales Forecasting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="container">
+    <h1>Sales Forecasting System</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Order Date:</label><br>
+        <input type="date" name="order_date" required><br><br>
+
+        <label>Product:</label><br>
+        <input type="text" name="product" required><br><br>
+
+        <label>Category:</label><br>
+        <input type="text" name="category" required><br><br>
+
+        <label>Sub-Category:</label><br>
+        <input type="text" name="sub_category" required><br><br>
+
+        <label>Region:</label><br>
+        <select name="region" required>
+            <option value="South">South</option>
+            <option value="North">North</option>
+            <option value="East">East</option>
+            <option value="West">West</option>
+            <option value="Central">Central</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Predict Sales</button>
+
+    </form>
+
+    {% if result is defined %}
+    <div class="result">
+        <h2>Forecasted Sales: {{ result }}</h2></div>
+    {% endif %}
+</div>
+</body>
+</html>
